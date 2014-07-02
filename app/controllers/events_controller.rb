@@ -18,6 +18,6 @@ class EventsController < ApplicationController
   private
 
   def event_params
-
+    params.require(:event).permit(:event_date, :name, :description)
   end
 end

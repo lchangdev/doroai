@@ -1,0 +1,6 @@
+<%= simple_form_for(zone) do |f| %>
+  <%= f.input :event_date, as: :date, order: [:month, :day, :year] %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.button :submit %>
+<% end %>
